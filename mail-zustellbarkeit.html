@@ -1,0 +1,26 @@
+
+<!doctype html><html lang="de"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E‑Mail Zustellbarkeit – SPF/DKIM/DMARC</title>
+<link rel="icon" href="assets/img/avatar-512.png" type="image/png">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head><body>
+<header class="nav"><div class="container nav-inner">
+  <a class="brand" href="index.html"><img class="avatar" src="assets/img/avatar-64.png" alt="Dorel Bordea">
+  <span class="brand-text"><span class="name">DOREL BORDEA</span><span class="role">Freiberufliche Pflegefachkraft</span></span></a>
+</div></header>
+<main class="section"><div class="container">
+<h1 class="h1">E‑Mail Zustellbarkeit – Checkliste</h1>
+<div class="card">
+<ol>
+<li><strong>SPF</strong> – füge im DNS eine TXT‑Record hinzu:<br>
+<code>v=spf1 include:_spf.hostinger.com ~all</code></li>
+<li><strong>DKIM</strong> – aktiviere DKIM im Mail‑Panel (Hostinger) und füge die vorgeschlagenen CNAME/TXT‑Records.</li>
+<li><strong>DMARC</strong> – füge im DNS eine TXT‑Record hinzu (start neutral, dann strenger):<br>
+<code>_dmarc  IN TXT  "v=DMARC1; p=none; rua=mailto:postmaster@deine‑domain; fo=1"</code></li>
+<li>Nutze <strong>SMTP</strong> im Formular (config.php ausfüllen) statt <code>mail()</code>.</li>
+<li>Teste mit <em>diagnostics.php</em> und einem externen Empfänger (z. B. Gmail).</li>
+</ol>
+</div>
+</div></main>
+</body></html>

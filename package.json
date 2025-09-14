@@ -1,0 +1,9 @@
+{
+  "name": "bordea-pflege-site",
+  "private": true,
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "nodemailer": "^6.9.11"
+  }
+}
