@@ -1,0 +1,57 @@
+/* ====== Base ====== */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;color:#0b1a3a;background:#f7faff;line-height:1.5}
+a{text-decoration:none;color:#0b57d0}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* ====== Hero ====== */
+.hero{padding-top:20px;padding-bottom:60px}
+.hero h1{font-size:48px;line-height:1.1;margin:0 0 25px;color:#0b1a3a}
+.hero p.lead{font-size:18px;margin:4px 0 0;color:#1d335f}
+.hero-sub{font-size:18px;color:#334a7d;margin:8px 0 15px}
+
+/* Pills / badges */
+.pills{display:flex;flex-wrap:wrap;gap:14px;margin:20px 0}
+.pill{padding:10px 16px;border-radius:999px;background:#eaf2ff;border:1px solid #cfe2ff;color:#113a7a;font-weight:600;white-space:nowrap}
+
+/* Buttons */
+.btns{display:flex;gap:14px;margin:12px 0 10px}
+.btn{padding:12px 18px;border-radius:12px;border:0;cursor:pointer;font-weight:700}
+.btn-primary{background:#0b57d0;color:#fff;box-shadow:0 6px 16px rgba(11,87,208,.2)}
+.btn-secondary{background:#eef3ff;color:#0b1a3a;border:1px solid #cfe2ff}
+
+/* Check list line items */
+.checks{display:flex;flex-wrap:wrap;gap:12px;margin:14px 0}
+.check{background:#f1f6ff;border:1px solid #d9e7ff;color:#223;padding:10px 14px;border-radius:999px}
+
+/* ====== Grid (hero + pricing) ====== */
+.section{padding:24px 0}
+.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:start}
+@media (max-width: 960px){.grid{grid-template-columns:1fr}}
+
+/* ====== Pricing Card (dreapta) ====== */
+.card{background:#fff;border:1px solid #e5edff;border-radius:18px;padding:22px;box-shadow:0 8px 30px rgba(10,42,102,.08)}
+.card h3{margin:0 0 8px;font-size:28px}
+.card .muted{color:#4c618f;font-size:14px}
+.rule{height:1px;background:#e8f0ff;margin:16px 0}
+.kpi{display:flex;align-items:baseline;gap:12px}
+.kpi .big{font-size:32px;font-weight:800;color:#0b1a3a}
+.kpi .sub{color:#4c618f}
+
+/* Lista extinsă din card – o singură coloană cu buline */
+.leistungen-list{list-style:none;margin:12px 0 0;padding:0}
+.leistungen-list li{margin:6px 0;padding-left:0}
+.leistungen-list li::before{content:"• ";font-weight:700;color:#163d7a}
+
+/* ====== Footer ====== */
+.footer{background:#0a2a66;color:#dbe7ff;margin-top:40px}
+.footer a{color:#cfe0ff}
+.footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px;padding:28px 0}
+.footer h4{margin:0 0 10px}
+.footer p,.footer li{color:#e6ecff}
+.footer ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+.footbar{border-top:1px solid rgba(255,255,255,.15);padding:10px 0;text-align:center;font-size:14px;color:#dbe7ff}
+
+/* ====== Utility ====== */
+.hidden{display:none}
